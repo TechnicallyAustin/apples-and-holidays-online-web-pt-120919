@@ -79,7 +79,7 @@ holiday_hash.each do |season, holiday|
     new_arr = []
   holiday.each do |holiday, decoration|
     decoration.each do |new|
-    new_arr << new
+    new_arr << decoration
     binding.pry
   end
   new_arr.flatten
