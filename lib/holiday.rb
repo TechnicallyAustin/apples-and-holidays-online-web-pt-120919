@@ -1,4 +1,4 @@
-require 'pry'
+
 require 'pry'
 def second_supply_for_fourth_of_july(holiday_hash)
   # given that holiday_hash looks like this:
@@ -80,6 +80,7 @@ holiday_hash.each do |season, holiday|
   holiday.each do |holiday, decoration|
     decoration.each do |new|
     new_arr << new
+    binding.pry
   end
   new_arr.flatten
 end
